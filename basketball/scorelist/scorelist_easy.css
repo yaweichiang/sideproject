@@ -8,14 +8,16 @@ html, body {
     touch-action: manipulation;
   }
 .main{
-    height: 100vh;
+    
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    height: 100vh;
     background: linear-gradient(to bottom, rgba(101, 167, 243, 0.74),  transparent),
                 url(bk.jpg);
     background-repeat: no-repeat;
     background-size: 100% auto;
+    background-position:center center;
 }
 .main_re{
     flex-direction: row-reverse;
@@ -107,4 +109,10 @@ button{
 .next,.reset{
     width: 45%;
     border-style: none;
+}
+@media (orientation:portrait) {    
+    .main{
+        background-size: auto 100%;
+
+    }
 }
