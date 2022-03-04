@@ -12,6 +12,10 @@ html, body {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    background: linear-gradient(to bottom, rgba(101, 167, 243, 0.74),  transparent),
+                url(bk.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
 }
 .main_re{
     flex-direction: row-reverse;
@@ -80,18 +84,24 @@ button{
 
 }
 .utils{
+    color: azure;
+    background-color: rgba(0, 0, 0, 0.315);
     text-align: center;
     font-size: 30px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
+.utils button{
+    background-color: rgba(6, 66, 19, 0.507);
+    border: .5px solid transparent;
+}
 .show_time{
     margin: 50% 0 10px 0;
 }
 .changeplace,.start{
     padding: 0 20px;
-    width: 100%;
+    width: 80%;
     border-style: none;
 }
 .next,.reset{
