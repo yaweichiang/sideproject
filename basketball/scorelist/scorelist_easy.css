@@ -3,6 +3,10 @@
     padding: 0;
     list-style: none;
 }
+html, body {
+    /* 預防連點兩次的放大畫面 */
+    touch-action: manipulation;
+  }
 .main{
     height: 100vh;
     display: flex;
