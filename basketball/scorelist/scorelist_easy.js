@@ -86,7 +86,7 @@ function init(){
         if(team_a.get_foul()>=5)
             document.querySelector('.foul_a').style.color='red'
         else
-            document.querySelector('.foul_b').style.color='black' 
+            document.querySelector('.foul_a').style.color='black' 
         
     }
     function show_b(){
