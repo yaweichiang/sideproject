@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="scorelist_easy.css">
+    <title>Document</title>
+</head>
+<body onload="init()">
+    <div class="main">
+        <div class="team_a">
+            <div class="name_a"></div>
+            <div class="score_a"></div>
+            <div class="foul_a"></div>
+            <div class="btn_a">
+                <button class="score_add2">兩分球</button>
+                <button class="score_add3">三分球</button>
+                <button class="score_add1">一分球</button>
+                <button class="foul">犯規</button>
+                <button class="fix_score">修正分數(-1)</button>
+                <button class="fix_foul">修正犯規(-1)</button>
+            </div>
+        
+        </div>
+        <div class="utils">
+            <button class="changeplace">換場</button>
+            <div class="timer">
+                <div>第<span class="part"></span>節</div>
+                <div class="show_time"><span class="min"></span>:<span class="sec"></span></div>
+                <button class="start">開始/暫停</button>
+                <button class="next">下一節</button>
+                <button class="reset">重置時間</button>
+            </div>
+        </div>
+        <div class="team_b">
+            <div class="name_b"></div>
+            <div class="score_b"></div>
+            <div class="foul_b"></div>
+            <div class="btn_b">
+                <button class="score_add2">兩分球</button>
+                <button class="score_add3">三分球</button>
+                <button class="score_add1">一分球</button>
+                <button class="foul">犯規</button>
+                <button class="fix_score">修正分數(-1)</button>
+                <button class="fix_foul">修正犯規(-1)</button>
+            </div>
+        
+        </div>
+    </div>
+
+
+<script src="scorelist_easy.js"></script>
+</body>
+</html>
