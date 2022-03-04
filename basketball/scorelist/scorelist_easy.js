@@ -28,6 +28,9 @@ class Team{
     fix_foul(){
         this.foul-=1;
     }
+    reset_foul(){
+        this.foul = 0;
+    }
   
 }
 class Timer{
@@ -210,6 +213,10 @@ function init(){
                 }
                 clearInterval(timer.next_part())
                 timer.set_auto("")
+                team_a.reset_foul()
+                team_b.reset_foul()
+                show_a()
+                show_b()
                 show_timer()
                 show_part()
                 console.log(timer.part)
