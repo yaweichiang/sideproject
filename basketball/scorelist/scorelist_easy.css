@@ -110,7 +110,7 @@ button{
     width: 45%;
     border-style: none;
 }
-@media (orientation:portrait) {    
+@media  (orientation:portrait) {    
     .main{
         background-size: auto 100%;
 
