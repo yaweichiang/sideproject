@@ -200,7 +200,7 @@ function init(){
             }else if(e.target.className==='changeplace'){
                 document.querySelector('.main').classList.toggle('main_re')
             }else if(e.target.className==='next'){
-                if(timer.get_min != 0 || timer.get_sec !=0 ){
+                if(timer.get_min() != 0 || timer.get_sec() !=0 ){
                     if(!confirm("時間尚未結束,確定要換下一節？"))
                         return                          
                 }
