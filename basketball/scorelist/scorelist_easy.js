@@ -107,6 +107,10 @@ function init(){
             timer.set_auto(setInterval(()=>{
                 timer.timerun()
                 show_timer()
+                if(timer.get_min() == 0 && timer.get_sec()==0){
+                    clearInterval(timer.auto)
+                    timer.set_auto("")
+                }
             },1000))
             console.log('star')
         }else{
