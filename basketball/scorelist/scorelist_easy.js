@@ -129,7 +129,7 @@ function init(){
     let A = prompt('請輸入第一隊隊名:','隊伍一');
     let B = prompt('請輸入第二隊隊名:','隊伍二');
     let P = parseInt(prompt('請輸入要打的節數','4'));
-    let M = parseInt(prompt('請輸入每一節的分鐘數','15'));
+    let M = parseInt(prompt('請輸入每一節的分鐘數','10'));
     console.log(P,M)
     if (A === null) 
         A = '隊伍一'
@@ -138,7 +138,7 @@ function init(){
     if (isNaN(P))
         P = 4
     if (isNaN(M))
-        M = 15
+        M = 10
     let team_a = new Team(A)
     let team_b = new Team(B)
     console.log(P,M)
