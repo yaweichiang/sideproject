@@ -1,0 +1,83 @@
+html{
+    background: linear-gradient(to bottom,rgb(247, 247, 123) 30%,rgb(247, 159, 76) 80%) no-repeat;
+    height: 100%;
+}
+.hide{
+    display: none;
+}
+.context{
+    width: 80%;
+    height: auto;
+    margin: auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+.title{
+    padding: 20px 50px;
+    font-size: 30pt;
+}
+.singup{
+    font-size: 12pt;
+}
+.nickname{
+    background-color: rgba(0, 0, 0, 0.63);
+    color: azure;
+    height: 30px;
+    border-style: none;
+    font-size: 12pt;
+    padding: 0 10px;
+    width: 100px;
+    
+}
+
+
+.player_block h5{
+    margin: 20px 0 10px;
+    font-display:inherit;
+    width: 100%;
+
+}
+.players{
+    justify-content: center;
+    margin: auto;
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.player{
+
+    background-color: rgba(0, 0, 0, 0.356);
+    margin: 2px;
+    display: inline-block;
+    width: 40%;
+}
+.player>button{
+    color: red;
+    font-weight: bold;
+    border-style: none;
+    background-color: rgba(241, 166, 3, 0.822);
+    padding: 1px 5px;
+}
+.player>.name{
+    display: inline-block;
+    color: white;
+    width: 50%;
+}
+.player>button:hover{
+    background-color: black;
+}
+.grouping{
+    display: inline;
+}
+.add,.grouping{
+    width: 60px;
+    height: 30px;
+    border-style: none;
+    background-color: black;
+    color: white;
+}
+.grouping{
+    margin: 10px;
+}
