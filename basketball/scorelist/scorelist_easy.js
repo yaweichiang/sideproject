@@ -41,6 +41,9 @@ class Timer{
         this.min = m;
         this.sec = 0;
         this.auto = "";
+        this.voice =  new Audio('voice.mov');
+        this.voice_2 =  new Audio('voice_2.mov');
+
 
     }
     get_min(){
@@ -59,7 +62,12 @@ class Timer{
                 this.sec=60;
             }else
                 return;
+            
         }
+        if(this.min==0&&this.sec==31)
+            this.voice.play()
+        if(this.min==0&&this.sec==1)
+            this.voice_2.play()
         this.sec-=1;
     }
     set_auto(id){
@@ -75,11 +83,15 @@ class Timer{
         this.reset_time()
         return this.auto;
     }
-    
+    putvoice(){
+        this.voice.play();
+    }
     
     
     
 }
+
+
 
 function init(){
 
@@ -224,6 +236,9 @@ function init(){
                 clearInterval(timer.reset_time())
                 timer.set_auto("")
                 show_timer()
+            }else if(e.target.className==='sound'){
+                // alert("聲音")
+                timer.putvoice()
             }
         }
     })
