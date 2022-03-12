@@ -66,7 +66,7 @@ class Timer{
         }
         if(this.min==0&&this.sec==31)
             this.voice.play()
-        if(this.min==0&&this.sec==1)
+        else if(this.min==0&&this.sec==1)
             this.voice_2.play()
         this.sec-=1;
     }
